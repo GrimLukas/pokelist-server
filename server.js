@@ -44,7 +44,7 @@ router.get('/spepokemon/:pokename', (req, res) => {
     };
     let results = JSON.parse(body);
     res.send({
-      body: results
+      body: results.body
     });
   });
 });
@@ -56,7 +56,7 @@ router.get('/favorites/:phoneid', (req, res) => {
     };
     let results = JSON.parse(body);
     res.send({
-      body: results
+      body: results.body
     });
   });
 });
