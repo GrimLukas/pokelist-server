@@ -42,9 +42,9 @@ router.get('/spepokemon/:pokename', (req, res) => {
     if (err || !body) {
       res.send('An error has occurred during the process. Please try again later');
     };
-    let results = JSON.parse(body);
+    let results = JSON.parse(res.body);
     res.send({
-      body: results.body
+      body: results
     });
   });
 });
@@ -54,9 +54,9 @@ router.get('/favorites/:phoneid', (req, res) => {
     if (err || !body) {
       res.send('An error has occurred during the process. Please try again later');
     };
-    let results = JSON.parse(body);
+    let results = JSON.parse(res.body);
     res.send({
-      body: results.body
+      body: results
     });
   });
 });
