@@ -64,4 +64,4 @@ router.get('/favorites/:phoneid', (req, res) => {
 app.use('/', router);
 
 
-app.listen(API_PORT, () => console.log(`Listening on port ${API_PORT}`));
+app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
