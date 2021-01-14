@@ -4,7 +4,7 @@ const request = require('request');
 const app = express();
 const router = express.Router();
 
-const API_PORT = process.env.API_PORT || 3001;
+const PORT = process.env.PORT || 3001;
 
 router.get('/', (req, res) => {
   res.send({
